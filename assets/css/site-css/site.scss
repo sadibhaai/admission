@@ -1,0 +1,127 @@
+// sass --watch blog.scss blog.min.css
+// sass --watch site.scss:site.min.css --style compressed
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+@import 'modules/variables';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* ---------------------------------------------------------------> */
+/* This section is requried to always keep the footer at the bottom */
+.master-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+.main, main {
+    flex: 1;
+}
+/* <--------------------------------------------------------------- */
+
+// This container will centerize it's child in both vert and hor.
+//Useful for login pages.
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    width: 96%;
+    max-width: 1000px;
+    margin:auto;
+    // background-color: lightcyan;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+    font-size: 1.5em;
+    font-family: $sans-pro;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    img{
+        width: auto;
+        height: 100px;
+    }
+    &>div>div{
+        text-align: center;
+    }
+
+    button{
+        padding: 10px 6px;
+        width: 120px;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        margin-top: 26px;
+    }
+}
+
+
+@import 'modules/media_queries';
+
+@import 'modules/typography';
+
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/circular';
+
+@import 'modules/form/form-mini';
+@import 'modules/form/form-numbered';
+@import 'modules/form/form-classic';
+
+@import 'modules/form/buttons';
+
+@import 'modules/flex/flex-parent';
+@import 'modules/flex/flex-child';
+
+@import 'modules/print/nonresponsive-grid';
+@import 'modules/print/printable';
+
+@import 'modules/utilities/width';
+@import 'modules/utilities/margin';
+@import 'modules/utilities/padding';
+@import 'modules/utilities/offsets';
+@import 'modules/utilities/misc';
+@import 'modules/utilities/alert';
+@import 'modules/utilities/spinner';
+
+@import 'modules/pages/preview.php';
+
+@import 'modules/pages/index';
+@import 'modules/pages/school-welcome';
+@import 'modules/pages/school-login';
+@import 'modules/pages/update-profile';
+@import 'modules/pages/new-requisition';
+@import 'modules/pages/view-requisition';
+@import 'modules/pages/student-application';
+
+
+
+

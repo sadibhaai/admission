@@ -1,0 +1,511 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PBCCHS</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGYY8C781K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CGYY8C781K');
+    </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Purba Bakalia City Corporation High School">
+        <meta name="keywords" content="Bangladesh, School, Admission Teletalk">
+        <meta name="author" content="Mohammad Sadi">
+
+
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+
+        <link rel="icon" type="image/png" href="assets/images/dhselogo.jpg"> 
+        <link href="assets/css/bootstrap-grid.css" rel="stylesheet">
+        <link href="assets/css/site-css/site.min.css?v=1638206125" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.maateen.me/kalpurush/font.css');
+
+        div.school {
+            /* border: 1px solid green; */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #choiceTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        #choiceTobdy {}
+
+        th:first-child {
+            width: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+            text-align: center;
+        }
+
+        th {
+            font-family: 'Source Sans Pro';
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            border: 1px solid gray;
+            background-color: #efefef;
+        }
+
+        /* .school-th {
+            text-align: left;
+        } */
+
+        .chk-th,
+        .chk-td {
+            width: 47px;
+        }
+
+        td:first-child {
+            font-family: 'Source Sans Pro';
+            text-align: center;
+        }
+
+        .chk-td {
+            text-align: center;
+        }
+
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+      
+
+        .col-lg-6.quota-notes>ul>li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body id="student-application">
+    <!-- <div class="master-wrapper"> -->
+    <!-- .master-wrapper starts -->
+
+
+    <!-- <div class="overlay">
+        <div>
+            <div><img src="http://gsaext.teletalk.com.bd/gov-non/assets/images/spinner.svg"></div>
+            <div class="message"></div>
+        </div>
+    </div> -->
+
+    <div class="overlay">
+        <div>
+            <div><img class="spinner" src="assets/images/spinner.svg"></div>
+            <div class="message"></div>
+            <button class="overlayButton" style="display: none;" title="Click to close this window">OK</button>
+        </div>
+    </div>
+
+    <header>
+                <div class="top">
+            <div class="left">
+                <div class="brand">
+                    <div class="logo-container">
+                        <img class="logo" src="http://gsaext.teletalk.com.bd/assets/images/dhselogo.jpg" alt="Bangladesh Govt. Logo">
+                    </div>
+                    <div class="govt-org">
+                        <!-- <div class="govt">Government of the People's Republic of Bangladesh</div> -->
+                        <div class="organization">বেসরকারি বিদ্যালয়সমূহে ভর্তি - ২০২২</div>
+                        <div class="govt">মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</div>
+                        
+                    </div>
+                </div>         
+            </div>
+            <div class="right mobile-menu">
+                <div class="hamburger-icon-container">
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">  
+                    <img class="hamburger" src="assets/images/hamburger-1.png" alt="Mobile Menu">
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="nav-container" id="nav-container">
+                <nav class="top-nav">
+                    <ul>
+                            <!-- <li><a href="http://gsaext.teletalk.com.bd/gov-non/school/welcome.php?sid=$encSid">মূল পাতা</a></li> -->
+                        <li><a href="#" style="color:red;>হোম</a></li>
+                        <li><a href="#">একাডেমিক</a></li>
+                        <li><a href="#">প্রশাসনিক</a></li>
+                        <li><a href="#">নোটিশ</a></li>
+                        <li><a href="#">ফলাফল</a></li>
+                        <li><a href="#">এডমিশন</a></li>
+                        <li><a href="#">যোগাযোগ</a></li> 
+    <!-- <li><a href="http://gsaext.teletalk.com.bd/gov-non/school/login/logout.php?sid=$encSid">লগআউট</a></li> -->
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+        <style>
+            section.section {
+                padding: 20px;
+                padding-bottom: 9px;
+                margin-bottom: 40px;
+            }
+
+            .section-title {
+                font-family: sans-serif;
+                font-weight: 800;
+                font-size: 25px;
+                margin-bottom: 20px;
+                color: #3d4e5e;
+            }
+        </style>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1><span style="color: #6262ee;"> অনলাইনে </span>ভর্তির আবেদন- ২০২২</h1>
+
+            <form id="main-form" class="form classic" action="" method="post">
+
+                               
+
+                <div style="font-weight: 800; font-size: 17px; font-family: 'Kalpurush', sans-serif;">
+                    * সমস্ত তথ্য অবশ্যই <span style="color: red;">ইংরেজিতে</span> পূরণ করতে হবে।
+                </div>
+
+                <div style="font-weight: 800; font-size: 17px; font-family: 'Kalpurush', sans-serif;">
+                    * লাল তারকা (<span style="color: red;">*</span>) চিহ্ণিত তথ্যগুলো অবশ্যই প্রদান করতে হবে।
+                </div>
+                <br>
+                <br>
+
+                <section class="section box-shadow">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="field">
+                                <label for="name" class="required" lang="bn">নাম</label>
+                                <input class="dontAllowUnicode upper-case" type="text" name="name" id="" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="field">
+                                <label for="dateOfBirth" class="required">জন্ম তারিখ</label>
+                                <input type="text" name="dateOfBirth" id="" value="" placeholder="dd-mm-yyyy i.e. 24-07-2015">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="field">
+                                <label for="birthRegistrationNo" class="required">জন্ম নিবন্ধনের নম্বর</label>
+                                <input type="text" name="birthRegistrationNo" class="integer" maxlength="17" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="field">
+                                <label for="gender" class="required">লিঙ্গ</label>
+                                <select name="gender" class="resetSchool">
+                                    <option value=""></option>
+                                    <option value="1">বালক</option>
+                                    <option value="2">বালিকা</option>
+                                    <option value="4">তৃতীয় লিঙ্গ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="field">
+                                <label for="mobileNo" class="required">মোবাইল নম্বর</label>
+                                <input type="text" name="mobileNo" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="field">
+                                <label for="confirmMobileNo" class="required">মোবাইল নম্বরটি আবার লিখুন</label>
+                                <input type="text" name="confirmMobileNo" value="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section box-shadow">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="field">
+                                <label for="fatherName" class="required">পিতার নাম</label>
+                                <input type="text" class="upper-case" name="fatherName" id="" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="field">
+                                <label for="fatherNid" class="required">পিতার এনআইডি (NID) নম্বর</label>
+                                <input class="integer" type="text" name="fatherNid" maxlength="17" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="field">
+                                <label for="motherName" class="required">মাতার নাম</label>
+                                <input type="text" class="upper-case" name="motherName" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="field">
+                                <label for="motherNid" class="required">মাতার এনআইডি (NID) নম্বর</label>
+                                <input class="integer" type="text" name="motherNid" maxlength="17" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="field">
+                                <label for="guardianName" class="">অভিভাবকের নাম</label>
+                                <input type="text" class="upper-case" name="guardianName" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="field">
+                                <label for="guardianNid" class="">অভিভাবকের এনআইডি (NID) নম্বর</label>
+                                <input class="integer" type="text" maxlength="17" name="guardianNid" value="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section box-shadow">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="field">
+                                <label for="version" class="required">শ্রেণী</label>
+                                <span lang="bn" class="note">যে শ্রেণিতে ভর্তি হতে চান সেটি নির্বাচন করুন।</span>
+
+                                <select name="class" class="resetSchool">
+                                    <option value=""></option>
+                                    <option value="6">ষষ্ঠ</option>    
+                                    <option value="7">সপ্তম</option>    
+                                    <option value="8">অষ্টম</option>    
+                                    <option value="9">নবম</option>                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="prevSchoolDetails" style="display: none;">
+                        <div class="col-lg-9">
+                            <div class="field">
+                                <label for="previousSchoolName" class="required">পূর্ববর্তী স্কুলের নাম</label>
+                                <input type="text" name="previousSchoolName" class="upper-case">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="field">
+                                <label for="previousClassId" class="required">পূর্ববর্তী শ্রেণী</label>
+
+                                <select name="previousClassId">
+                                    <option value=""></option>
+                                    <option value="5">পঞ্চম</option>  
+                                    <option value="6">ষষ্ঠ</option>    
+                                    <option value="7">সপ্তম</option>    
+                                    <option value="8">অষ্টম</option>    
+                                    <option value="9">নবম</option>                                       
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- বর্তমান ঠিকানা -->
+                <section class="section box-shadow">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label style="color: rgba(128, 128, 128, 1);">বর্তমান ঠিকানা</label>
+                            <div class="field">
+                                <label for="presentAddress" class="required">বিস্তারিত ঠিকানা</label>
+                                <span lang="bn" class="note">এখানে জেলা এবং থানা লেখার প্রয়োজন নাই।</span>
+                                <input type="text" name="presentAddress" class="upper-case" id="" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="field">
+                                <label for="presentDivCode" class="required">বিভাগ</label>
+                                <input type="hidden" name="presentDivName" id="" value="">
+                                <select name="presentDivCode">
+                                    <option value=""></option>
+                                    <option value="1">BARISHAL</option>    
+                                    <option value="2">CHATTOGRAM</option>    
+                                    <option value="3">DHAKA</option>    
+                                    <option value="4">KHULNA</option>    
+                                    <option value="8">MYMENSINGH</option>    
+                                    <option value="5">RAJSHAHI</option>    
+                                    <option value="6">RANGPUR</option>    
+                                    <option value="7">SYLHET</option>                                
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="field">
+                                <label for="presentDistCode" class="required">জেলা</label>
+                                <input type="hidden" name="presentDistName" id="" value="">
+                                <select name="presentDistCode">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="field">
+                                <label for="presentThanaCode" class="required">থানা</label>
+                                <input type="hidden" name="presentThanaName" id="" value="">
+                                <select name="presentThanaCode">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="field">
+                                <label for="presentPostalCode" class="">পোস্ট কোড</label>
+                                <input type="text" name="presentPostalCode" maxlength="4">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- স্থায়ী ঠিকানা -->
+                <section class="section box-shadow">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label style="color: rgba(128, 128, 128, 1);">স্থায়ী ঠিকানা</label>
+                            <div class="field">
+                                <label for="permanentAddress" class="required">বিস্তারিত ঠিকানা</label>
+                                <span lang="bn" class="note">এখানে জেলা এবং থানা লেখার প্রয়োজন নাই।</span>
+                                <input type="text" name="permanentAddress" class="upper-case" id="" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="field">
+                                <label for="permanentDivCode" class="required">বিভাগ</label>
+                                <input type="hidden" name="permanentDivName" id="" value="">
+                                <select name="permanentDivCode">
+                                    <option value=""></option>
+                                    <option value="1">BARISHAL</option>
+                                    <option value="2">CHATTOGRAM</option>
+                                    <option value="3">DHAKA</option>
+                                    <option value="4">KHULNA</option>
+                                    <option value="8">MYMENSINGH</option>
+                                    <option value="5">RAJSHAHI</option>
+                                    <option value="6">RANGPUR</option>
+                                    <option value="7">SYLHET</option>                                
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="field">
+                                <label for="permanentDistCode" class="required">জেলা</label>
+                                <input type="hidden" name="permanentDistName" id="" value="">
+                                <select name="permanentDistCode">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="field">
+                                <label for="permanentThanaCode" class="required">থানা</label>
+                                <input type="hidden" name="permanentThanaName" id="" value="">
+                                <select name="permanentThanaCode">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="field">
+                                <label for="permanentPostalCode">পোস্ট কোড</label>
+                                <input type="text" name="permanentPostalCode" maxlength="4">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+               
+
+                <section class="section box-shadow">
+                    <div class="uploader field formControl">
+                        <div style="border:0; width: 100%;">
+                            <h2 style="font-family: 'Hind Siliguri',sans-serif; color: #3d4e5e; font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; প্রার্থীর ছবি</h2>
+                            <div class="preview-and-instruction">
+                                <div class="col-md-4">
+                                    <div class="preview">
+                                        <img name="ApplicantPhoto" id="ApplicantPhotoImage" src="http://gsaext.teletalk.com.bd/assets/images/default-photo.jpg" style="width: 150px;">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="instruction" style="padding-left: 0px; font-size: 1.1em; font-family: 'Hind Siliguri',sans-serif !important; color: #3d4e5e; display:block; ">ছবির দৈর্ঘ্য ও প্রস্থ্য অবশ্যই <strong> 300X300 </strong>  পিক্সেল এবং সাইজ <strong>100</strong> কিলোবাইটের নিচে হতে হবে।  </div>
+                                    <div class="file-input">
+                                        <input type="file" title="Applicant's Photo" name="ApplicantPhoto" id="ApplicantPhoto" class="photo formControl" data-swift-required="required" data-swift-title="Applicant's Photo" accept="image/jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Photo upload ends -->
+                </section>
+              
+                <section class="section">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="field" style="text-align: center;">
+                                    <label for="" style="display: flex;  justify-content: center; align-items: center;">
+                                        <input type="checkbox" name="agreement"> &nbsp;&nbsp; আমি অঙ্গীকার করছি যে উপরে প্রদানকৃত সকল তথ্য সঠিক।
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                           
+                </section>
+            </form>
+        </div>
+    </main>
+        <div style="width: 100%; text-align: center;">
+        <div id="ajax-status"></div>
+        <button class="button" id="submit" name="submit" style="width: 153px; height: 50px; padding: 10px 20px; font-weight: bold; ">Submit</button>
+    </div>
+
+<footer>
+    <div class="copyright">
+    ©2021, OGIT, All Rights Reserved.
+    </div>
+    <div class="powered-by">
+        Powered By: OGIT
+        <!--
+        <a href="http://www.teletalk.com.bd/" target="_blank"> 
+            <img class="logo" style="height: 60px;" alt="teletalk Logo" title="Powered By: Teletalk" src="http://gsaext.teletalk.com.bd/assets/images/teletalk-logo.png">
+        </a> 
+        --> 
+    </div>
+</footer>
+    <!-- </div> -->
+    <!-- .master-wrapper ends -->
+    <script>
+        let baseUrl = 'http://gsaext.teletalk.com.bd/gov-non';
+        var instType = '2';
+    </script>
+    <script src="assets/js/jquery-3.6.0.min.js?v=1638206125"></script>
+    <script src="assets/js/hamburger-menu.js?v=1638206125"></script>
+    <script src="assets/js/SwiftNumeric.js"></script>    
+    <script src="student-application.js"></script>
+</body>
+
+</html>
